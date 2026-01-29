@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreshyVegy — Fresh & Healthy Vegetables Everyday</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="FreshyVegy — Order fresh vegetables online. Farm direct, organic, affordable, and delivered fast.">
+
+  <style>
+    /* Minimal inline to ensure fast initial render */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=48&q=60" alt="FreshyVegy" class="me-2 logo-img">
+        <span class="brand-text">Freshy<span class="text-danger">Vegy</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Why FreshyVegy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Popular</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#products" class="btn btn-sm btn-outline-success ms-3 d-none d-lg-inline">Shop Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero-section pt-6">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-5 fw-bold mb-3">Fresh & Healthy Vegetables Everyday</h1>
+          <p class="lead text-muted mb-4">Farm-direct produce, hand-picked daily for taste, nutrition and quality. Order now and feel the freshness.</p>
+
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+            <a href="#products" class="btn btn-lg btn-success cta-btn">Shop Now</a>
+            <a href="#contact" class="btn btn-lg btn-outline-danger cta-btn">Order Fresh</a>
+          </div>
+
+          <div class="mt-4 d-flex gap-3 small-cta">
+            <div class="d-flex align-items-center text-success"><i class="bi bi-check2-circle fs-4 me-2"></i>100% Fresh</div>
+            <div class="d-flex align-items-center text-warning"><i class="bi bi-truck fs-4 me-2"></i>Fast Delivery</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <div class="hero-images">
+            <img src="https://images.unsplash.com/photo-1518972559570-6f6260f2c1b9?auto=format&fit=crop&w=800&q=60" alt="Fresh vegetables" class="img-fluid rounded hero-main" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1544033529-1d4cc7b2e280?auto=format&fit=crop&w=600&q=60" alt="Tomatoes" class="img-fluid rounded hero-sub-1" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1572441710266-6c3bd2f6b1c0?auto=format&fit=crop&w=600&q=60" alt="Carrots" class="img-fluid rounded hero-sub-2" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- WHY -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2 class="fw-bold">Why Choose FreshyVegy?</h2>
+          <p class="text-muted">We bring farm-fresh produce to your doorstep with love and care.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature-card h-100 text-center p-3">
+            <div class="icon mb-3 text-success"><i class="bi bi-leaf-fill fs-1"></i></div>
+            <h5 class="fw-semibold">100% Fresh</h5>
+            <p class="text-muted small">Picked daily to ensure premium freshness.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature-card h-100 text-center p-3">
+            <div class="icon mb-3 text-danger"><i class="bi bi-geo-alt-fill fs-1"></i></div>
+            <h5 class="fw-semibold">Farm Direct</h5>
+            <p class="text-muted small">Sourced directly from local farms.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature-card h-100 text-center p-3">
+            <div class="icon mb-3 text-warning"><i class="bi bi-cash-stack fs-1"></i></div>
+            <h5 class="fw-semibold">Affordable Prices</h5>
+            <p class="text-muted small">Great quality without breaking the bank.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature-card h-100 text-center p-3">
+            <div class="icon mb-3 text-info"><i class="bi bi-clock-history fs-1"></i></div>
+            <h5 class="fw-semibold">Fast Delivery</h5>
+            <p class="text-muted small">Freshness delivered to your door, fast.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="py-5 bg-light">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2 class="fw-bold">Popular Vegetables</h2>
+          <p class="text-muted">Handpicked favorites loved by our customers.</p>
+        </div>
+      </div>
+
+      <div class="row g-4" id="product-list">
+        <!-- Product Card Template (JS will handle cart actions) -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="Tomatoes">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Tomatoes - 1kg</h5>
+              <p class="text-muted small mb-2">Fresh, juicy & ripe</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <div class="price h5 mb-0">₹59</div>
+                <button class="btn btn-sm btn-success add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1524594154902-6b932a2b3323?auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="Carrots">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Carrots - 1kg</h5>
+              <p class="text-muted small mb-2">Crunchy and sweet</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <div class="price h5 mb-0">₹45</div>
+                <button class="btn btn-sm btn-success add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1582515073490-399813f3c6a6?auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="Chillies">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Red Chillies - 500g</h5>
+              <p class="text-muted small mb-2">Spicy and fresh</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <div class="price h5 mb-0">₹79</div>
+                <button class="btn btn-sm btn-success add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1612874746859-20c1c09b1b77?auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="Leafy Greens">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Leafy Greens - 250g</h5>
+              <p class="text-muted small mb-2">Crisp and rich in nutrients</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <div class="price h5 mb-0">₹39</div>
+                <button class="btn btn-sm btn-success add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FRESH PROMISE -->
+  <section class="fresh-banner text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h3 class="fw-bold">Our Fresh Promise</h3>
+          <p class="mb-0">We guarantee organic quality, daily harvesting and the highest hygiene standards. If you aren’t happy, we’ll make it right.</p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <a href="#contact" class="btn btn-light btn-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2 class="fw-bold">What Our Customers Say</h2>
+          <p class="text-muted">Real reviews from happy customers.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="testimonial-slider position-relative">
+            <div class="testimonial active text-center p-4">
+              <p class="mb-3">"FreshyVegy always delivers on time and the vegetables are so fresh — makes cooking a joy!"</p>
+              <h6 class="mb-0">— Rina K.</h6>
+            </div>
+
+            <div class="testimonial text-center p-4">
+              <p class="mb-3">"Great quality and friendly delivery. The carrots were especially sweet this week."</p>
+              <h6 class="mb-0">— Amit S.</h6>
+            </div>
+
+            <div class="testimonial text-center p-4">
+              <p class="mb-3">"Affordable and reliable — love the farm-direct approach."</p>
+              <h6 class="mb-0">— Leena M.</h6>
+            </div>
+
+            <button class="slider-prev btn btn-sm btn-outline-secondary"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-next btn btn-sm btn-outline-secondary"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="bg-white py-5 border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">FreshyVegy</h5>
+          <p class="small text-muted mb-1">123 Green Lane, Farmville</p>
+          <p class="small text-muted mb-1">Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+          <p class="small text-muted mb-0">Email: <a href="mailto:hello@freshyvegy.com">hello@freshyvegy.com</a></p>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-semibold">Quick Links</h6>
+          <ul class="list-unstyled small mb-0">
+            <li><a href="#products" class="text-muted">Shop</a></li>
+            <li><a href="#features" class="text-muted">Why FreshyVegy</a></li>
+            <li><a href="#reviews" class="text-muted">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-3 text-md-end">
+          <h6 class="fw-semibold">Follow Us</h6>
+          <div class="d-flex gap-2 justify-content-md-end">
+            <a href="#" class="text-muted fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-muted fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-muted fs-4"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col text-center small text-muted">
+          © <span id="year"></span> FreshyVegy — All rights reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

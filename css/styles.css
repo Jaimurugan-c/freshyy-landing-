@@ -1,0 +1,70 @@
+:root{
+  --fresh-green:#2f9e44; /* primary fresh green */
+  --vibrant-red:#e63946; /* accent red */
+  --muted:#6c757d;
+  --bg:#ffffff;
+  --card:#f8f9fa;
+  --radius:12px;
+}
+
+*{box-sizing:border-box}
+body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; color:#222; background:var(--bg);}
+
+/* NAV */
+.navbar .brand-text{font-weight:700}
+.navbar .logo-img{width:36px;height:36px;border-radius:8px;object-fit:cover}
+
+/* HERO */
+.hero-section{padding-top:110px;padding-bottom:60px}
+.hero-main{width:100%;height:320px;object-fit:cover;border-radius:16px}
+.hero-sub-1{position:relative; width:140px; top:-70px; left:-40px; box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+.hero-sub-2{position:relative; width:120px; top:-80px; left:40px; box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+
+.cta-btn{transition:transform .15s ease, box-shadow .15s ease}
+.cta-btn:hover{transform:translateY(-3px)}
+
+/* FEATURE CARDS */
+.feature-card{border:none;border-radius:var(--radius); transition:transform .18s ease, box-shadow .18s ease}
+.feature-card:hover{transform:translateY(-6px); box-shadow:0 20px 40px rgba(46, 68, 82, 0.08)}
+.feature-card .icon{display:flex;align-items:center;justify-content:center;width:70px;height:70px;border-radius:50%;background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2));margin:0 auto}
+
+/* PRODUCTS */
+.product-card{border-radius:12px; overflow:hidden; transition:transform .18s ease, box-shadow .18s ease}
+.product-card img{height:180px;object-fit:cover}
+.product-card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(0,0,0,0.06)}
+.add-to-cart{position:relative; overflow:hidden}
+
+/* Button ripple/scale effect */
+.btn {overflow: hidden}
+.btn:active{transform: scale(.98)}
+.btn::after{content:'';position:absolute;left:50%;top:50%;width:0;height:0;background:rgba(255,255,255,0.2);border-radius:50%;transform:translate(-50%,-50%);transition:width .35s ease,height .35s ease}
+.btn:active::after{width:200px;height:200px}
+
+/* FRESH BANNER */
+.fresh-banner{background:linear-gradient(90deg,var(--fresh-green), #199473);border-radius:12px;color:white;margin:40px 0}
+
+/* TESTIMONIALS */
+.testimonial-slider{position:relative;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#fff,#fff);box-shadow:0 10px 30px rgba(0,0,0,0.04)}
+.testimonial{display:none}
+.testimonial.active{display:block}
+.slider-prev,.slider-next{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:8px;opacity:.9}
+.slider-prev{left:10px}
+.slider-next{right:10px}
+
+/* FOOTER */
+footer{font-size:.94rem}
+
+/* Animations on scroll */
+.fade-up{opacity:0; transform: translateY(10px); transition:all .7s cubic-bezier(.2,.9,.2,1)}
+.fade-up.inview{opacity:1; transform:none}
+
+/* UTILITIES */
+.small-cta div{display:flex;align-items:center}
+
+@media (max-width:767px){
+  .hero-main{height:240px}
+  .hero-sub-1, .hero-sub-2{display:none}
+}
+
+/* Accessibility focus */
+a:focus, button:focus{outline:3px solid rgba(46, 68, 82, 0.1); outline-offset:2px}
